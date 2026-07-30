@@ -1,7 +1,25 @@
 aid: kidas
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kidas.png
 name: Kidas
-description: Kidas is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Kidas is a Techstars-backed trust-and-safety company that builds white-label
+  scam detection and online-protection solutions for enterprises and consumers. Its
+  ProtectMe platform monitors PC gaming and Discord voice and text channels for cyberbullying,
+  predators, phishing, and scams, and its broader suite adds SMS scam detection, email
+  protection, a scam-screening chatbot, and deepfake/impersonation defense that integrate
+  into existing customer channels. Kidas markets custom builds and lists Aura, Comcast,
+  Overwolf, Razer, Walmart, Intel, and Best Buy among its customers. No public developer
+  API, OpenAPI, or SDK surface is published as of this profile.
 url: https://raw.githubusercontent.com/api-evangelist/kidas/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Trust and Safety
+- Scam Detection
+- Fraud Prevention
+- Cybersecurity
+- Gaming
+- Deepfake Protection
+- Discord
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kidas-domain-security.yml
 - type: Website
   url: https://getkidas.com/
+- type: Blog
+  url: https://getkidas.com/blog
+- type: TermsOfService
+  url: https://getkidas.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://getkidas.com/privacy-policy/
+- type: Login
+  url: https://gaming.getkidas.com/login/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
